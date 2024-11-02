@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omega Nova</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container-1">
+
+    <!-- HEADER START -->
+    <div class="Atas fixed z-10 w-full">
+        <div class="header">
+        <div class="wrapper" >
+            <div class="isiheader">
+              <a href="/">
+                <img class="" src="/assets/img/omeganova.jpg" >
+              </a>
+                <div class="links">
+                    <a href="/saran-project/">Saran Project</a>
+                    <a href="/update-game">Update Game</a>
+                    <a href="/about">About</a>
+                </div>
+            </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- HEADER END -->
+
+    <!-- GAMBAR START -->
+    <div class="bawahHeader h-screen relative overflow-hidden">
+        <div class="">
+            <img class="center cover" src="/assets/img/hunter.jpeg" alt="">
+        </div>
+        <div class="bg-black absolute top-0 left-0 z-1 w-full h-full bg-opacity-40 backdrop-blur-md"></div>
+        <div class="absolute top-0 left-0 w-full h-full text-white flex items-center justify-center z-2">
+          <div class="text-center text-6xl lg:text-[6vw] font-bold tracking-widest uppercase leading-[1]">
+            <div class="text-gradient">Omega</div>
+            <div class="text-gradient">Nova</div>
+          </div>
+        </div>
+    </div>
+    <!-- GAMBAR END -->
+
+  <!-- BAWAH GAMBAR START -->
+    <!-- <div class="bawahgambar">
+        <div class="container-1"> 
+            <a href="#">Omega</a>
+            <a>/</a>
+            <a href="#">Nova</a>
+            <a>/</a>
+            <a href="#">Studio</a>
+        </div> -->
+    </div>
+  <!-- BAWAH GAMBAR END -->
+
+  <!-- HEADER ISI -->
+  <!-- <div class="HeaderPenjelasan">
+      <div class="inHeader">
+          <h2>Description</h2>
+      </div>
+  </div> -->
+  <!-- HEADER END -->
+
+  <div class="tentang"  data-aos="fade-up">
+      <div class="inbody">
+          <h2 class="font-bold">Omega Nova merupakan sebuah tim developer yang mengacu pada pengembangan game dan website.</h2>
+          <div>
+              <figure>
+                  <img class="gambar-sect-1" src="/assets/img/omeganova.jpg" alt="" >>
+              </figure>
+          </div>
+      </div>>
+  </div>
+
+
+  <div class="tentang2"  data-aos="fade-up">
+      <div class="inbody2">
+          <div>
+              <figure>
+                  <img class="gambar-sect-2" src="/assets/img/omeganova.jpg" alt="" >>
+              </figure>
+          </div>
+          <h2 class="font-bold"> Tim ini berisi 7 orang anggota yang masing-masing memiliki keahlian dan bidang nya sendiri, serta menciptakan sebuah tim yang dapat bekerja sama dengan kompak.</h2>
+      </div>
+  </div>
+  <!-- ISI 
+  <div class="container-13">
+      <div class="gambar">
+          <img src="#">
+          <div class="teks">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h4>
+          </div>
+      </div>
+  </div>
+
+  -->
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script> 
+  <script>
+    AOS.init();
+
+    // Initialize Lenis
+    const lenis = new Lenis();
+
+    // Listen for the scroll event and log the event data
+    lenis.on('scroll', (e) => {
+      console.log(e);
+    });
+
+    // Use requestAnimationFrame to continuously update the scroll
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+
+  </script>
+
+
+
+</body>
+</html>

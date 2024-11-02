@@ -1,0 +1,321 @@
+*,html,body{
+  margin: 0;
+  padding: 0;
+
+}
+
+.container-1{
+  background-color: rgb(0, 0, 0);
+  overflow-x: hidden;
+
+}
+
+.wrapper{
+  background-color: black;
+  padding: 15px;
+}
+
+a{  
+  color: rgba(255, 255, 255, 0.849);
+  text-decoration: none;
+  font-size: 20px;
+  float: right;
+  margin: 15px;
+}
+
+a:hover{
+  color: black;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.isiheader{
+
+  display: flex;
+  justify-content: space-between;
+
+  a{
+      img{
+          width: 5vh;
+          height: 5vh;
+          border: 1px solid;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+      }
+  }
+
+
+  img{
+      width: 5vh;
+      height: 5vh;
+      border: 1px solid;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+  }
+
+  .links {
+      display: flex;
+      justify-items: center;
+      align-items: center;
+      a{
+          display: inline-block;
+          color: white;
+          transition: all .3s linear;
+      }
+
+      a:hover {
+          color: yellow;
+      }
+  }
+}
+
+.isigambar{
+  background-color: black;
+  img{
+      width: 100%;
+      height: 70vh;
+      display: flex;
+      position: relative;
+      object-fit: cover;
+      background-position: center;
+      margin: 0;
+      padding: 0;
+      object-position: 0vh;
+
+  }
+}
+
+
+.bawahgambar{
+  .container-1{
+      background-color: black;
+      padding: 1vh;
+      text-align: center;
+      object-position: center;
+
+
+      a{
+          color: rgb(255, 247, 247);
+          text-align: center;
+          font-size: 3vh;
+          cursor: pointer;
+          transition: 1s;
+          margin: 10px;
+          float: inherit;
+          margin-left: 20px;
+
+          
+
+
+      }
+      a:hover{
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+          cursor: pointer;
+          transition: 0.3s;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          -ms-transition: 0.3s;
+          -o-transition: 0.3s;
+      }
+
+  }
+}
+
+
+
+.HeaderPenjelasan{
+
+  margin: 0;
+  padding: 0;
+
+  .inHeader{
+
+
+      h2{
+
+          color: rgb(255, 255, 255);
+          font-size: 4vh;
+          text-align: center;
+          background-color: black;
+          background-size: auto;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+  }
+}
+
+.tentang{
+  .inbody{
+      display: grid;
+      padding: 105px 150px;
+      gap: 4rem;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      h2{
+          color: rgb(255, 255, 255);
+          /* position: absolute; */
+         right: 46%;
+         text-align: center;
+         font-size: 35px;
+         /* padding: 105px 150px; */
+         font-style: oblique;
+         /* animation-name: kiri_kanan; */
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         
+         
+      }
+      div{
+          figure {
+              overflow: hidden;
+              height: fit-content;
+
+              animation-name: memantul;
+              animation-duration: 5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: ease-in-out;
+              
+             .gambar-sect-1{
+                  height: auto;
+                  width:70%;
+                  /* width: 450px; */
+                  /* margin: 200px 1115px; */
+                  /* display: flex; */
+                  border-radius: 20px !important;
+             }
+          }
+      }
+  }
+}
+
+.tentang2{
+  .inbody2{
+      display: grid;
+      padding: 105px 150px;
+      gap: 4rem;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      h2{
+          color: rgb(255, 255, 255);
+          /* position: absolute; */
+         right: 46%;
+         text-align: center;
+         font-size: 35px;
+         /* padding: 105px 150px; */
+         font-style: oblique;
+         /* animation-name: kiri_kanan; */
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         
+         
+      }
+      div{
+          figure {
+              overflow: hidden;
+              height: fit-content;
+              animation-name: memantul;
+              animation-duration: 5s;
+              animation-iteration-count: infinite;
+              animation-timing-function: ease-in-out;
+
+             .gambar-sect-2{
+                  height: auto;
+                  width: 70%;
+                  /* width: 450px; */
+                  /* margin: 200px 1115px; */
+                  /* display: flex; */
+                  border-radius: 20px !important;
+             }
+          }
+      }
+  }
+}
+
+@keyframes memantul {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-50px);
+  }
+}
+
+
+@keyframes kiri_kanan {
+  0% {
+      
+      transform: translateX(0px);
+      transform untuk memindahkan, jika angka translateX semakin besar, maka makin ke kanan,
+  }
+
+  50%{
+      
+      transform: translate(200px);
+  }
+
+  100% {
+     
+      transform: translateX(0px);
+  }
+}
+
+@keyframes kanan_kiri {
+  0% {
+      
+      transform: translateX(0px);
+      transform untuk memindahkan, jika angka translateX semakin besar, maka makin ke kanan,
+  }
+
+  50%{
+      
+      transform: translate(200px);
+  }
+
+  100% {
+     
+      transform: translateX(0px);
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #f3d169 0%, #91cfff 40%, #ffe8ab 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}

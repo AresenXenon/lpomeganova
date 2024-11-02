@@ -156,13 +156,6 @@ a:hover{
 
 .tentang{
   .inbody{
-      display: grid;
-      padding: 105px 150px;
-      gap: 4rem;
-      justify-content: space-between;
-      align-items: center;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-
       h2{
           color: rgb(255, 255, 255);
           /* position: absolute; */
@@ -177,69 +170,22 @@ a:hover{
          
          
       }
-      div{
-          figure {
-              overflow: hidden;
-              height: fit-content;
+      figure {
+          overflow: hidden;
+          height: fit-content;
 
-              animation-name: memantul;
-              animation-duration: 5s;
-              animation-iteration-count: infinite;
-              animation-timing-function: ease-in-out;
-              
-             .gambar-sect-1{
-                  height: auto;
-                  width:70%;
-                  /* width: 450px; */
-                  /* margin: 200px 1115px; */
-                  /* display: flex; */
-                  border-radius: 20px !important;
-             }
-          }
-      }
-  }
-}
-
-.tentang2{
-  .inbody2{
-      display: grid;
-      padding: 105px 150px;
-      gap: 4rem;
-      justify-content: space-between;
-      align-items: center;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-
-      h2{
-          color: rgb(255, 255, 255);
-          /* position: absolute; */
-         right: 46%;
-         text-align: center;
-         font-size: 35px;
-         /* padding: 105px 150px; */
-         font-style: oblique;
-         /* animation-name: kiri_kanan; */
-         animation-duration: 5s;
-         animation-iteration-count: infinite;
-         
-         
-      }
-      div{
-          figure {
-              overflow: hidden;
-              height: fit-content;
-              animation-name: memantul;
-              animation-duration: 5s;
-              animation-iteration-count: infinite;
-              animation-timing-function: ease-in-out;
-
-             .gambar-sect-2{
-                  height: auto;
-                  width: 70%;
-                  /* width: 450px; */
-                  /* margin: 200px 1115px; */
-                  /* display: flex; */
-                  border-radius: 20px !important;
-             }
+          animation-name: memantul;
+          animation-duration: 5s;
+          animation-iteration-count: infinite;
+          animation-timing-function: ease-in-out;
+          
+          .gambar-sect-1{
+              height: auto;
+              width:70%;
+              /* width: 450px; */
+              /* margin: 200px 1115px; */
+              /* display: flex; */
+              border-radius: 20px !important;
           }
       }
   }
